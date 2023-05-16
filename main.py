@@ -13,5 +13,5 @@ print(df.head())
 df['sentiment'], df['sent_score']  = df['user_review'].apply(lambda x: SA.sentiment_analyser(x)).str
 print(df['sentiment'])
 
-df.to_csv('test_set_withsent.csv', index=False)
+df.to_csv('data/test_set_withsent.csv', index=False)
 
